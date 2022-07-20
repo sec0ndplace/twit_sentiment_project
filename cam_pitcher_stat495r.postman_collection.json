@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "dfaea559-4dfb-4fc5-9a28-ac601e22f914",
+		"name": "stat495r",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get ALL Data",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Bearer",
+						"value": "ER5Q6zlKkf",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://stat495r.byu.edu:8220/get_all_data",
+					"protocol": "http",
+					"host": [
+						"stat495r",
+						"byu",
+						"edu"
+					],
+					"port": "8220",
+					"path": [
+						"get_all_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health-check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://stat495r.byu.edu:8220/health-check",
+					"protocol": "http",
+					"host": [
+						"stat495r",
+						"byu",
+						"edu"
+					],
+					"port": "8220",
+					"path": [
+						"health-check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Model",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://stat495r.byu.edu:8220/create_model",
+					"protocol": "http",
+					"host": [
+						"stat495r",
+						"byu",
+						"edu"
+					],
+					"port": "8220",
+					"path": [
+						"create_model"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict_eth_hourly",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"index\": {\r\n        \"0\": 0\r\n    },\r\n    \"TextBlob_Subjectivity\": {\r\n        \"0\": 0.2803409091\r\n    },\r\n    \"TextBlob_Polarity\": {\r\n        \"0\": 0.1652272727\r\n    },\r\n    \"total_volumes\": {\r\n        \"0\": 14689037349.8473186493\r\n    },\r\n    \"prev_price\": {\r\n        \"0\": 3024.4312649776\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://stat495r.byu.edu:8220/predict_eth_hourly",
+					"protocol": "http",
+					"host": [
+						"stat495r",
+						"byu",
+						"edu"
+					],
+					"port": "8220",
+					"path": [
+						"predict_eth_hourly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data (Coingecko API doesn't work on this server?)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://stat495r.byu.edu:8220/get_data",
+					"protocol": "http",
+					"host": [
+						"stat495r",
+						"byu",
+						"edu"
+					],
+					"port": "8220",
+					"path": [
+						"get_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Sample JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://stat495r.byu.edu:8220/get_sample_json",
+					"protocol": "http",
+					"host": [
+						"stat495r",
+						"byu",
+						"edu"
+					],
+					"port": "8220",
+					"path": [
+						"get_sample_json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
